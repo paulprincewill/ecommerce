@@ -8,4 +8,5 @@
 
 	loadHeader("main");
 	loadUI("main");
+	loadUI("success");
 	loadFooter("main");

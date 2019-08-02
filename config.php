@@ -4,12 +4,11 @@
 	define("DB_HOST", "localhost");
 	define("DB_USER", "root");
 	define("DB_PASSWORD", "");
-	define("DB_NAME", "unicus_campus");
-	define("USER", "phone_number");
-	define("GENERAL_TITLE", "Unicus Campus");
+	define("DB_NAME", "ecommerce");
+	define("GENERAL_TITLE", "Student ecommerce");
 	
 	// Define URL
-	define("ROOT_PATH", "unicus/");
+	define("ROOT_PATH", "ecommerce/");
 	define("ROOT_URL", "http://localhost/");
 
 	define("BACKEND", "apps/backend/");	

@@ -1,4 +1,4 @@
-<form method="post" action="app/upload/main">
+<form method="post" action="app/upload/main" dd_submit="yes">
 
 	<p>
 		<label>select picture:</label>
@@ -12,7 +12,7 @@
 
    <p>
 	    <label> Price:</label>
-	    <input type="text" name="price">
+	    <input type="number" name="price">
    </p>
 
    <p>
