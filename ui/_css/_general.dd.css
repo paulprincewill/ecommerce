@@ -172,13 +172,14 @@ dd_loader [dd_onload]::after {
     opacity: 1;
   }
 }* {
-    text-align: left;
     font-family: segoe ui,century gothic, arial;
 	text-decoration: none;
 	line-height: 150%
 }
 
 body {  
+
+    text-align: left;
 	margin: 2% 10%;
 }
 
@@ -195,36 +196,54 @@ a:hover {
 
 
 form {
-	border: 1px solid #eee;
+	border: 1px solid #ddd;
 	border-radius: 20px;
 	overflow: hidden;
 	max-width: 500px;
     padding-bottom: 30px
 }
 
-form input[type='text'], form textarea {
+form input, form textarea, form select {
 	width: 99%;
 	border: 0px;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #ddd;
 	padding: 30px;
+    font-family: segoe ui light,century gothic, arial;
+
+}
+
+form select {
+	width: 100%;
+}
+
+form label {
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 5px 40px;
+    display: inline-block;
+    margin: 5px 20px;
+	margin-top: 15px;
+    font-size: 90%;
+    font-family: segoe ui light,century gothic, arial;
 }
 
 button, input[type='submit'], input[type='button'] {
 	background-color: #e64c3c;
 	color: white;
-	padding: 15px 40px;
+	padding: 10px 40px;
 	border-radius: 100px;
 	font-weight: bold;
 	border: 0px;
 	margin: 20px;
 	transition: all 0.5s;
 	box-shadow: 0px 10px 25px #ccc;
-	cursor: pointer
+	cursor: pointer;
+	width: auto;
 	
 }
 
 button:hover, input[type='submit']:hover, input[type='button']:hover {
-	padding: 17px 42px;
+	padding: 11px 41px;
 	box-shadow: 0px 0px 10px #999;
 	background-color: #ce4436;
 }

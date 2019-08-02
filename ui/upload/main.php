@@ -1,22 +1,20 @@
-<form method="post" action="app/upload/main" dd_submit="yes">
+<form method="post" action="app/upload/main" dd_submit="yes" dd_bindResult="#success">
 
 	<p>
-		<label>select picture:</label>
+		<label>Select product picture</label>
 		<input type="file" name="picture">
 	</p>
 
     <p>
-		<label> Title:</label>
-		<input type="text" name="title">
+		<input type="text" name="title" placeholder="Type in product title">
 	</p>
 
    <p>
-	    <label> Price:</label>
-	    <input type="number" name="price">
+	    <input type="number" name="price" placeholder="Price">
    </p>
 
    <p>
-       <label> All categories:</label>
+       <label> Select category</label>
        <select name="category">
 	   	<option>Antiques</option>
 	   	<option>Art</option>
@@ -58,11 +56,10 @@
 	</p>
 
 	 <p>
-		  <label> details:</label>
-		  <textarea name="details"></textarea>
+		  <textarea name="details" placeholder="Type in product details"></textarea>
 	 </p>
 
-	  <p>
+	  <p align="center">
 	      <input type="Submit" value="Add product">
 	  </p>
    </form>
