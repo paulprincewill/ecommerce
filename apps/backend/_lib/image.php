@@ -13,19 +13,20 @@
 		public $min_height = "100";
 		public $image_size;
 
-		public function __construct($image, $prefix = '') {
+		public function __construct($image, $prefix = 'picture') {
 			$this->image = $image;
-			$this->imageName = $prefix.basename($_FILES[$this->image]["name"]);
+			$this->imageName = basename($_FILES[$this->image]["name"]);
 			$this->file_extension = pathinfo($this->imageName,PATHINFO_EXTENSION);
 			$this->pendingImage = $_FILES[$this->image]["tmp_name"];
 			$this->image_size = $_FILES[$this->image]["size"];
+			$this->prefix = $prefix;
 
 			// return image name to be used outside
 			return $this->imageName;
 		}
 
 		public function preparePath($path) {
-			$this->fullpath = $path.'/'.$this->imageName;
+			$this->fullpath = $path.'/'.$this->prefix.'.'.$this->file_extension ;
 		}
 
 		// Function for uploading images

@@ -1,4 +1,4 @@
-<form method="post" action="app/upload/main" dd_submit="yes" dd_bindResult="#success">
+<form method="post" action="app/upload/main" dd_submit="file" dd_bindResult="#success">
 
 	<p>
 		<label>Select product picture</label>
