@@ -1,0 +1,42 @@
+main {  
+	margin: 2% 10%;
+}
+
+#products > div {
+	border: 1px solid #eee;
+	border-radius: 10px;
+	margin: 20px;
+	width: 25%
+}
+
+#products p {
+	padding: 20px;
+	border-top: 1px solid #eee;
+}
+
+#products p:last-child {
+	text-align: center;
+}
+
+#products button {
+	padding: 5px 40px;
+    font-size: 80%;
+    width: 90%;
+}
+
+#products span {
+	margin: 10px;
+}
+
+#products .price {
+	
+	display: inline-block;
+	border: 1px solid #eee;
+	border-radius: 50px;
+	padding: 5px 40px;
+}
+
+#products .product_title {
+	font-size: 130%;
+	color:  #e64c3c;
+}

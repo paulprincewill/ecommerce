@@ -5,7 +5,6 @@
 	require BACKEND_LIB."image.php";
     
 
-
    	$title = $db->getInput('title');
    	$price = $db->getInput('price');
    	$category = $db->getInput('category');
@@ -19,7 +18,7 @@
     $product_id = $db->getData();
     $product_id = $product_id['id']+1;
 
-	$img = new img("picture","product".$product_id);
+	$img = new img("picture","product_".$product_id);
 	$img->checkImage();
 
 	if ($img->error ==""){
@@ -45,8 +44,6 @@
 	         $x['dd_success'] = false;
 	         $x['dd_feedback'] = $db->feedback;
 	     }
-		$x['dd_success'] = false;
-        $x['dd_feedback'] = $img->imageName;
 		
 	} else {
 		
