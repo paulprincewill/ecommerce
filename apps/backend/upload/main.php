@@ -29,10 +29,10 @@
 		$img->preparePath("../../../_assets/uploads");
 		$img->upload(); // Upload full image
 
-
+		$picture = "product_".$product_id.'.'.$img->file_extension;
 
     	
-		 $db->sql("INSERT INTO products (title, price, category, details, seller_id) VALUES('$title','$price','$category','$details','$seller_id')");
+		 $db->sql("INSERT INTO products (title, price, category, details, seller_id, picture) VALUES('$title','$price','$category','$details','$seller_id','$picture')");
      	$product_id = $db->conn->insert_id;
 
 	   

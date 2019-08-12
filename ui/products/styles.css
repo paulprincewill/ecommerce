@@ -1,27 +1,30 @@
 main {  
-	margin: 2% 10%;
+	margin: 2% 5%;
+}
+
+#products {
+	display: flex;
+	flex-flow: row wrap
 }
 
 #products > div {
 	border: 1px solid #eee;
-	border-radius: 10px;
-	margin: 20px;
-	width: 25%
+	border-radius: 5px;
+	margin: 15px;
+	flex: 1 0 20%;
+	max-width: 20%;
+	overflow: hidden;
 }
 
 #products p {
+	padding: 10px;
+}
+
+#products .view_product {
+	text-align: center;
+	display: block;
 	padding: 20px;
 	border-top: 1px solid #eee;
-}
-
-#products p:last-child {
-	text-align: center;
-}
-
-#products button {
-	padding: 5px 40px;
-    font-size: 80%;
-    width: 90%;
 }
 
 #products span {
@@ -29,14 +32,19 @@ main {
 }
 
 #products .price {
-	
+
 	display: inline-block;
 	border: 1px solid #eee;
 	border-radius: 50px;
-	padding: 5px 40px;
+	padding: 2px 20px;
+	font-size: 80%;
 }
 
 #products .product_title {
-	font-size: 130%;
+	font-size: 110%;
 	color:  #e64c3c;
+}
+
+#products img {
+	width: 100%;
 }
