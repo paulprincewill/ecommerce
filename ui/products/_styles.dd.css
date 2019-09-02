@@ -11,12 +11,12 @@ main {
 	border: 1px solid #eee;
 	border-radius: 5px;
 	margin: 15px;
-	flex: 1 0 20%;
-	max-width: 20%;
+	flex: 1 0 25%;
+	max-width: 25%;
 	overflow: hidden;
 }
 
-#products p {
+#products .details {
 	padding: 10px;
 }
 
@@ -27,7 +27,7 @@ main {
 	border-top: 1px solid #eee;
 }
 
-#products span {
+#products p {
 	margin: 10px;
 }
 

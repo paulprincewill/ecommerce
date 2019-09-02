@@ -5,10 +5,10 @@
 				<img src="" dd_display="picture">
 			</div>
 
-			<p>
-				<span class="product_title dd_shortline" dd_display="title"></span>
-				<span class="price" dd_display="price"></span>
-			</p>
+			<div class="details">
+				<p class="product_title dd_shortline" dd_display="title"></p>
+				<p class="price"> N<span dd_display="price"></span> </p>
+			</div>
 
 			<a class="view_product" href="[link]" dd_attr="link">
 				View product →
