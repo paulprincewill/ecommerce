@@ -1,5 +1,5 @@
 
-	<section id="products" dd_load="app/products/main" dd_amount="all" dd_pagination="no">
+	<section id="products" dd_load="app/products/main" dd_amount="all" dd_pagination="no" dd_dataFromLink>
 		<div dd_clone="4">
 			<div class="thumbnail dd_thumbnail">
 				<img src="" dd_display="picture">
@@ -15,4 +15,3 @@
 			</a>
 		</div>
 	</section>
-			

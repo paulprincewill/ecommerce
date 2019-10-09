@@ -1,0 +1,19 @@
+main {
+	margin: 2% 10%;
+}
+
+#overview {
+	border-bottom: 1px solid #ddd;
+	text-align: center
+}
+
+#overview p {
+	font-size: 200%;
+	margin: 0px
+}
+
+#overview p > span {
+	color: #D91470;
+	font-weight: bold;
+
+}

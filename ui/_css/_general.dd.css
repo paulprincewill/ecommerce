@@ -124,7 +124,6 @@ dd_loader [dd_onload]::after {
     border-radius: 20px 20px 20px 0px;
     font-size: 20px;
     display: block;
-    width: 70% !important;
     margin: 30px;
 }
 /* ------------------
@@ -171,21 +170,23 @@ dd_loader [dd_onload]::after {
   to {
     opacity: 1;
   }
-}* {
-    font-family: segoe ui light,century gothic, arial;
+}
+* {
+    font-family: "Proxima Nova Rg",century gothic, arial;
 	text-decoration: none;
 	line-height: 150%
 }
 
-body {  
+body {
 
     text-align: left;
-	margin: 2% 10%;
+	margin: 0px;
+	padding: 0px
 }
 
 a {
 	text-decoration: none;
-	color: #e64c3c;
+	color: #D91470;
     cursor: pointer
 }
 
@@ -193,14 +194,17 @@ a:hover {
 	color: #333;
 }
 
-
+h1 {
+	font-family: 'Proxima Nova Bl'
+}
 
 form {
 	border: 1px solid #ddd;
 	border-radius: 20px;
 	overflow: hidden;
 	max-width: 500px;
-    padding-bottom: 30px
+    padding-bottom: 30px;
+	margin: auto
 }
 
 form input, form textarea, form select {
@@ -208,8 +212,14 @@ form input, form textarea, form select {
 	border: 0px;
 	border-bottom: 1px solid #ddd;
 	padding: 30px;
-    font-family: segoe ui light,century gothic, arial;
+    /* font-family: segoe ui light,century gothic, arial; */
 
+}
+
+
+form button {
+	margin: 20px auto;
+	display: block;
 }
 
 form select {
@@ -224,11 +234,12 @@ form label {
     margin: 5px 20px;
 	margin-top: 15px;
     font-size: 90%;
-    font-family: segoe ui light,century gothic, arial;
+    /* font-family: segoe ui light,century gothic, arial; */
 }
 
 button, input[type='submit'], input[type='button'] {
-	background-color: #e64c3c;
+	font-family: "Proxima Nova Th", arial;
+	background-color: #D91470;;
 	color: white;
 	padding: 10px 40px;
 	border-radius: 100px;
@@ -239,11 +250,87 @@ button, input[type='submit'], input[type='button'] {
 	box-shadow: 0px 10px 25px #ccc;
 	cursor: pointer;
 	width: auto;
-	
+
+}
+
+
+form h1 {
+	text-align: center;
+	margin: 10px 0px;
+	padding: 20px;
+	font-family: 'Proxima Nova Bl', arial;
+	border-bottom: 1px solid #ddd
+}
+
+form i {
+	margin: 0px 20px
 }
 
 button:hover, input[type='submit']:hover, input[type='button']:hover {
-	padding: 11px 41px;
 	box-shadow: 0px 0px 10px #999;
-	background-color: #ce4436;
+}
+
+
+
+.icons {
+	width: 20px;
+	display: inline-block;
+	padding: 0px 5px 5px 5px;
+	vertical-align: middle;
+}
+#main_header {
+	display: flex;
+	padding: 0px 0px 0px 40px;
+	align-items: center;
+	border-bottom: 1px solid #ddd;
+}
+
+
+
+#logo img {
+	height: 80px
+}
+
+#logo {
+	flex: 1
+}
+#search_area {
+	flex: 3;
+	padding: 20px
+}
+
+#search {
+	width: 80%;
+	padding:0px;
+	border: 1px solid #ddd;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+#search input {
+	padding: 10px 50px;
+    flex: 3;
+    border: 0px;
+    font-size: 100%;
+}
+
+#search button {
+	padding: 5px 25px;
+	margin: 10px;
+	color: #d91470;
+	background: transparent;
+	box-shadow: none;
+	margin: 0px
+
+}
+
+
+#title {
+	border-bottom: 1px solid #ddd;
+	padding: 20px;
+	font-size: 250%;
+	text-align: center;
+	margin-bottom: 50px;
+	color: #123d58
 }

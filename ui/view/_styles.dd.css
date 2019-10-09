@@ -1,5 +1,5 @@
-#main {  
-	margin: 2% 10%;
+#main {
+	margin: 2% 15%;
     display: flex;
 }
 
@@ -16,7 +16,7 @@
 
 #sidebar {
     flex: 1;
-    align-self: flex-end; 
+    align-self: flex-end;
 }
 
 
@@ -30,12 +30,12 @@
 }
 
 
-#main > div > div:first-child, #product > div:nth-child(2) {  
+#main > div > div:first-child, #product > div:nth-child(2) {
     border-top: 0px;
 }
 
 #main > #product > div:first-child {
-    padding: 0px; 
+    padding: 0px;
     min-height: 200px;
     background-image: url('../../_assets/images/picture.svg');
     background-size: 40%;

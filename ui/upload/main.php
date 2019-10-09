@@ -1,6 +1,13 @@
 <form method="post" action="app/upload/main" dd_submit="file" dd_bindResult="#success">
 
 	<p>
+		<span> <input type="radio" name="type" onchange="changeType()" value="sale" checked> For sale </span>
+		<span> <input type="radio" name="type" onchange="changeType()" value="rent"> For rent </span>
+	</p>
+
+		<br>
+
+	<p>
 		<label>Select product picture</label>
 		<input type="file" name="picture">
 	</p>
@@ -9,8 +16,19 @@
 		<input type="text" name="title" placeholder="Type in product title">
 	</p>
 
-   <p>
+   <p id="normal_price">
 	    <input type="number" name="price" placeholder="Price">
+   </p>
+
+   <p id="renting_price">
+	   	<label> Renting price </label>
+		<br>
+	    <input type="number" name="renting_price" placeholder="Price"> per
+		<select name="renting_duration">
+	 	   	<option>hour</option>
+	 	   	<option>day</option>
+	 	   	<option>week</option>
+		</select>
    </p>
 
    <p>

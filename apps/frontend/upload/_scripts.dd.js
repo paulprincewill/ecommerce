@@ -4,3 +4,16 @@ function dd_intialize() {
 }
 
 // Every other instructions, variables, functions that will run later goes below
+
+function changeType() {
+	var type = dd("input[name='type']:checked").val();
+
+	if (type == "rent") {
+		dd("#renting_price").fadeIn(500);
+		dd("#normal_price").hide();
+	} else {
+
+		dd("#normal_price").fadeIn(500);
+		dd("#renting_price").hide();
+	}
+}

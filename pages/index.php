@@ -6,8 +6,7 @@
 	$page_description = "";
 	$page_keywords = "";
 
-	loadHeader("main");
+	loadHeader("noheader");
 	loadUI("main");
     loadPage("start");
 	loadFooter("main");
-    
