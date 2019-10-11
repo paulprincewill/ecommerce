@@ -1,7 +1,5 @@
 <form dd_submit="yes" action="app/register/main" dd_redirect="dashboard">
 
-	<h1> Register <i class="pe-7s-angle-down pe-va"></i> </h1>
-
 	<label> Full name </label>
 	<input type="text" name="full_name" placeholder="Type in your full name" required>
 

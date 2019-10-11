@@ -64,3 +64,15 @@ main {
 	font-weight:bold;
 	font-size: 95%
 }
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
+
+	main {
+		padding: 5%;
+		padding-left: 5%
+	}
+
+	#buttons button {
+		margin: 15px
+	}
+}

@@ -202,7 +202,6 @@ form {
 	border: 1px solid #ddd;
 	border-radius: 20px;
 	overflow: hidden;
-	max-width: 500px;
     padding-bottom: 30px;
 	margin: auto
 }
@@ -360,4 +359,34 @@ button:hover, input[type='submit']:hover, input[type='button']:hover {
 	margin-bottom: 0px;
 	margin-top: 0px;
 	color: #123d58
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
+
+
+	#main_header {
+		display: block;
+		padding: 20px;
+		text-align: center;
+		border-bottom: 1px solid #ddd;
+	}
+
+
+	#main_header > #catalogue {
+		width: 50%;
+		margin: 20px auto
+	}
+
+	#main_header > #catalogue  select {
+		padding: 10px;
+		border: 0px;
+		margin: 0px;
+		cursor: pointer
+	}
+
+	#main_header > a {
+		margin: 10px 15px;
+		display: inline-block;
+	}
+
 }

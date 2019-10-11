@@ -28,7 +28,16 @@
 
 		<?php include 'catalogue.php' ?>
 		<a href="products"> All products </a>
-		<a href="app/login/logout"> Log out </a>
+
+		<?php
+			if ($page_link == 'login') {
+				echo '<a href="register"> <button> Register </button> </a>';
+			} else if ($page_link == 'register') {
+				echo '<a href="login"> <button> Login </button> </a>';
+			} else {
+				echo '<a href="app/login/logout"> Log out </a>';
+			}
+		?>
 
 		<a href="upload">
 			<button> Add product   <i class="pe-7s-angle-right pe-va"></i> </button>

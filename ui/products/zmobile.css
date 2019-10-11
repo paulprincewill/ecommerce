@@ -1,0 +1,22 @@
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
+
+	#search {
+		flex-flow: row wrap;
+	}
+	#search > input[name='search'] {
+		flex: 1 0 90%;
+	}
+
+	#search > * {
+	    flex: 1;
+	}
+
+	#products {
+		display: block;
+	}
+
+	#products > div {
+		max-width: none;
+	}
+}

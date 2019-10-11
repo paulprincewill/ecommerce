@@ -1,11 +1,8 @@
-main {
-	margin: 5% 10%;
-}
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
-
-	main {
-		margin: 5%;
+	#success > div {
+		width: 70%;
+	    margin: auto;
+	    margin-top: 100px;
 	}
-
 }

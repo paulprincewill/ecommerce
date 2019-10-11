@@ -1,0 +1,30 @@
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
+
+
+	#main_header {
+		display: block;
+		padding: 20px;
+		text-align: center;
+		border-bottom: 1px solid #ddd;
+	}
+
+
+	#main_header > #catalogue {
+		width: 50%;
+		margin: 20px auto
+	}
+
+	#main_header > #catalogue  select {
+		padding: 10px;
+		border: 0px;
+		margin: 0px;
+		cursor: pointer
+	}
+
+	#main_header > a {
+		margin: 10px 15px;
+		display: inline-block;
+	}
+
+}
