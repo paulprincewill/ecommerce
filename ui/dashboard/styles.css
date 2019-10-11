@@ -15,5 +15,6 @@ main {
 #overview p > span {
 	color: #D91470;
 	font-weight: bold;
-
+	font-size: 120%;
+	margin: 10px
 }

@@ -1,6 +1,9 @@
 <?php
 	include "../../../initialize.php";
-    $x['dd_success'] = true;
-    $x['dd_feedback'] = "This page is now active";
+	require BACKEND_LIB."db.php";
+
+	$user = $_SESSION['user'];
+	$db->sql("SELECT id FROM products WHERE seller_id='$user'");
+    $x['total_products'] = $db->getTotal();
 
     echo json_encode($x);
