@@ -15,8 +15,12 @@
 
         $thumbnail = "_assets/uploads/thumbnails/".$product['picture'];
         $product['picture'] = $thumbnail;
-        $product['seller'] = "Paul Princewill";
-        $product['seller_number'] = "tel: +2347061988188";
+
+		$seller = $product['seller_id'];
+		$db->sql("SELECT * FROM users WHERE id='$seller'");
+		$seller = $db->getData();
+        $product['seller'] = $seller['full_name'];
+        $product['seller_number'] = "tel: ". $seller['phone_number'];
 
 		if ($product['type'] == "rent") {
 			$product['price'] = $product['renting_price'].' per '. $product['rent_duration'];

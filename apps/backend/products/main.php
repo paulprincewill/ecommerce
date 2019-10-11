@@ -3,10 +3,18 @@
 	require "../../../initialize.php";
     require BACKEND_LIB."db.php";
 
-	if (isset($_GET['search'])) {
-		$search = $_GET['search'];
-		$sql = "SELECT * FROM products WHERE title LIKE '%$search%' LIMIT 0,12";
-	} else {
+	if (isset($_POST['search'])) {
+
+		$search = $_POST['search'];
+		$category = $_POST['category'];
+		$type = $_POST['type'];
+
+		$sql = "SELECT * FROM products WHERE title LIKE '%$search%' AND category LIKE '%$category%' AND type LIKE '%$type%' LIMIT 0,12";
+	} else 	if (isset($_GET['category'])) {
+		$search = $_GET['category'];
+		$sql = "SELECT * FROM products WHERE category LIKE '%$search%' LIMIT 0,12";
+	}
+	else {
 		$sql = "SELECT * FROM products LIMIT 0,12";
 	}
 
@@ -23,7 +31,7 @@
 		if ($product['type'] == "rent") {
 			$product['price'] = $product['renting_price'].' per '. $product['rent_duration'];
 		}
-		
+
     	array_push($alldata, $product);
     }
 

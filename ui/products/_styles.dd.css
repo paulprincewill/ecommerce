@@ -1,11 +1,38 @@
-main {
-	margin: 2% 10%;
+#search {
+	border: 0px;
+	border-bottom: 1px solid #ddd;
+	padding: 20px 10%;
+	border-radius: 0px;
+	display: flex;
+	max-width: none;
+	margin: 0px;
 }
 
+#search > * {
+	flex: 1;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin: 5px 10px;
+	padding: 10px 30px;
+	cursor: pointer;
+}
+
+#search > button {
+	flex:0.5;
+}
+
+#search > input[name='search'] {
+	flex: 2
+}
+
+form i {
+	margin: 0px 10px
+}
 #products {
 	display: flex;
 	flex-flow: row wrap;
-	margin: auto
+	margin: auto;
+	padding: 2% 10%;
 }
 
 #products > div {

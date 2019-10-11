@@ -12,7 +12,7 @@
    	$renting_price = $db->getInput('renting_price');
    	$renting_duration = $db->getInput('renting_duration');
 	$type = $db->getInput('type');
-   	$seller_id = 1;
+   	$seller_id = $_SESSION['user'];
 
     // We don't know the product id yet,
     // so we have to generate one

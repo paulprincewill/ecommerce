@@ -25,16 +25,18 @@
 			<img src="_assets/logo/logo2.png">
 		</div>
 
-		<div id="search_area">
-			<form id="search" action="products" method="get">
-				<input type="text" placeholder="Type in a product name to search" name="search">
-				<button type="submit"> <i class='pe-7s-search pe-2x'></i> </button>
-			</form>
-		</div>
 
-		<a href="dashboard">
-			<button> Account   <i class="pe-7s-angle-right pe-va"></i> </button>
+		<?php include 'catalogue.php' ?>
+		<a href="products"> All products </a>
+		<a href="app/login/logout"> Log out </a>
+
+		<a href="upload">
+			<button> Add product   <i class="pe-7s-angle-right pe-va"></i> </button>
 		</a>
+
+		<!-- <a href="dashboard">
+			<button> My products   <i class="pe-7s-angle-right pe-va"></i> </button>
+		</a> -->
 
     </header>
 

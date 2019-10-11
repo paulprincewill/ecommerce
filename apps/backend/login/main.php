@@ -6,12 +6,13 @@
 	$phone_number = $_POST['phone_number'];
 	$password = $_POST['password'];
 
-	$db->sql("SELECT password FROM users WHERE phone_number='$phone_number'");
+	$db->sql("SELECT password, id FROM users WHERE phone_number='$phone_number'");
 	if ($db->there_is_data()) { // If a user with this username is in the table
 		$data = $db->getData();
 		$db_password = $data['password'];
 
 		if ($password === $db_password) {
+			$_SESSION['user'] = $data['id'];
 			$x['dd_success'] = true;
 		} else {
 			$x['dd_success'] = false;

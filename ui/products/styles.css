@@ -1,11 +1,8 @@
-main {
-	margin: 2% 10%;
-}
-
 #products {
 	display: flex;
 	flex-flow: row wrap;
-	margin: auto
+	margin: auto;
+	padding: 2% 10%;
 }
 
 #products > div {
