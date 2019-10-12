@@ -5,9 +5,11 @@ main {
 
 
 form {
-	margin: auto;
+	margin: 50px auto;
+	width: 60%;
 	padding-top: 20px;
 }
+
 
 form p {
 	margin: 0px;

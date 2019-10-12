@@ -22,7 +22,7 @@
 	<header id="main_header">
 
 		<div id="logo">
-			<img src="_assets/logo/logo2.png">
+			<a href="index"> <img src="_assets/logo/logo2.png"> </a>
 		</div>
 
 
@@ -30,11 +30,11 @@
 		<a href="products"> All products </a>
 
 		<?php
-			if ($page_link == 'login') {
+			if ($page_link == 'login' || !isset($_SESSION['user'])) {
 				echo '<a href="register"> <button> Register </button> </a>';
 			} else if ($page_link == 'register') {
 				echo '<a href="login"> <button> Login </button> </a>';
-			} else {
+			} else if (isset($_SESSION['user'])) {
 				echo '<a href="app/login/logout"> Log out </a>';
 			}
 		?>

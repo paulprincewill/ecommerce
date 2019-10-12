@@ -27,6 +27,7 @@
 
 
 	$img = new img("picture","product_".$product_id);
+	$img->max_size = "5000000";
 	$img->checkImage();
 
 	if ($img->error ==""){

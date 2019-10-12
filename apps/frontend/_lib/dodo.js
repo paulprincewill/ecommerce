@@ -1213,10 +1213,14 @@ function dd_submit(get) {
         if (self.resultTarget !='' && self.resultTarget !==null) {
             get.after_request = function(e) {
 
-                var target = dd(self.resultTarget).select();
-                target = dd_bindLoad(target);
-                target.result = e;
-                dd_load(target)
+                var data = e;
+                if (typeof(data.dd_success) ==='undefined' || data.dd_success !== false) {
+
+                    var target = dd(self.resultTarget).select();
+                    target = dd_bindLoad(target);
+                    target.result = e;
+                    dd_load(target);
+                }
             }
         }
         

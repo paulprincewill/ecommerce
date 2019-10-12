@@ -23,7 +23,7 @@
    <p id="renting_price">
 	   	<label> Renting price </label>
 		<br>
-	    <input type="number" name="renting_price" placeholder="Price" required> per
+	    <input type="number" name="renting_price" placeholder="Price" value='0' required> per
 		<select name="renting_duration">
 	 	   	<option>hour</option>
 	 	   	<option>day</option>
